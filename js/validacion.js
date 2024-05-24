@@ -51,7 +51,7 @@ formulario.addEventListener("submit", e=>{
         enviar_ok=true
     }
     if(area.value=="Seleccionar..."){
-        //alert("Debe seleccionar una Area")
+        //alert("Debe seleccionar una Area").
         error+= `Debe Seleccionar una Area <br>`
         area.focus()
         enviar_ok=true
