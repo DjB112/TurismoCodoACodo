@@ -6,6 +6,7 @@ const area = document.getElementById("inputSeleccion");
 const errorMensaje = document.getElementById("errorMensaje");
 var numeros="0123456789";
 
+// limpiar las cajas
 function borrar_contenido(){
     // nombre.innerHTML="";
     // apellido.innerHTML="";
