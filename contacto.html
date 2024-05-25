@@ -33,11 +33,14 @@
 
     <main class="body">
       <section class="form">
-        <h1>Contacto</h1>
-
-        <!-- --------------------Inicio de Formulario de consulta -------------------   --> 
+      <!-- --------------------Inicio de Formulario de consulta -------------------   --> 
         <div class="container formulario_web col-6">
-          <form id="formulario" action="https://formsubmit.io/send/nombredemail@destino.com" method="POST">
+          <h2>Contacto</h2>
+          <form id="formulario" action="https://formsubmit.co/prof.dbustamante@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Mensaje desde la web">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="form-row">
               
               <div class="row">
@@ -57,30 +60,28 @@
                 <input type="email" class="form-control" id="inputEmail" placeholder="Email" required><br>
               </div>
               <div class="row">
-                <div class="input-group col-md-2">
+                <div class="input-group col">
                   <!-- <label style="display:inline;" for="inputSeleccion">Seleccionar Area: </label> -->
-                  <span class="input-group-text col-2">Area: </span>
-                  <select id="inputSeleccion" class="form col-2" required>
-                    <option selected>Seleccionar...</option>
+                  <span class="input-group-text col-3">Area: </span>
+                  <select id="inputSeleccion" class="control col-5" required>
+                    <option selected>Seleccionar..</option>
                     <option value="Playa">Playa</option>
                     <option value="Turismo">Turismo</option>
                     <option value="Aventura">Aventura</option>
                     <option value="General">General</option>
-                  </select>
-                               
+                  </select>      
                 </div>
-                <div class="col-2"></div>
-                <div class="form-check col-4">
+                <div class="col-1"></div>             
+                <div class="form-check col-6">
                   <input class="form-check-input" type="checkbox" id="mayorEdad">
                   <label class="form-check-label" for="gridCheck">
                     Soy mayor de edad.
                   </label>
-                </div>
+                </div>              
               </div>
 
-            </div>
-
               <br>
+
               <div class="custom-file col-7">
                 <input type="file" class="custom-file-input" id="inputArchivo" lang="es">
                 <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
@@ -100,18 +101,19 @@
             </div>
           </form>
         </div>  
-          <div class="container formulario_web">
-            <div class="Mapa col">
+        <div class="container formulario_web col-6">
+          <div class="row">
+            <div class="Mapa col-5">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5166.821319555658!2d-58.3858663783199!3d-34.60263320100741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf43a1ad6d%3A0x33262ac8117774eb!2sCerrito%20%26%20Avenida%20Corrientes%2C%20C1048%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716168767273!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="Contacto col">
-              <ul>
+            <div class="col">
+              <ul class="contacto col">
                 <li>Email: dddddd@asdasdad.com</li>
                 <li>Telefono: 011 15487788</li>
                 <li>Direccion: Av 9 de julio y Av Corrientes</li>                
               </ul>
-              <div class="col-2">
-                <ul class="lista-institucional d-flex">
+              <div class="col">
+                <ul class="inst_iconos d-flex" style="list-style: none;">
                   <li>
                     <a href="#"><i class="fa-brands fa-square-twitter fa-xl" style="color: #e52c07;"></i></a>
                   </li>
@@ -124,7 +126,8 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div>   
+        </div>
       <!-- -------------------- FIN de Formulario de consulta------------------------ -->
         
       </section>
